@@ -22,10 +22,10 @@ namespace subbuzz.Providers.SubSourceApi.Models.Responses
         public string Commentary { get; set; } = string.Empty;
 
         [JsonPropertyName("files")]
-        public int Files { get; set; }
+        public int? Files { get; set; }
 
         [JsonPropertyName("size")]
-        public int Size { get; set; }
+        public int? Size { get; set; }
 
         [JsonPropertyName("hearingImpaired")]
         public bool HearingImpaired { get; set; }
@@ -34,13 +34,13 @@ namespace subbuzz.Providers.SubSourceApi.Models.Responses
         public bool ForeignParts { get; set; }
 
         [JsonPropertyName("framerate")]
-        public string Framerate { get; set; } = string.Empty;
+        public string? Framerate { get; set; }
 
         [JsonPropertyName("productionType")]
-        public string ProductionType { get; set; } = string.Empty;
+        public string? ProductionType { get; set; }
 
         [JsonPropertyName("releaseType")]
-        public string ReleaseType { get; set; } = string.Empty;
+        public string? ReleaseType { get; set; }
 
         [JsonPropertyName("downloads")]
         public int Downloads { get; set; }
@@ -52,7 +52,7 @@ namespace subbuzz.Providers.SubSourceApi.Models.Responses
         public Rating? Rating { get; set; }
 
         [JsonPropertyName("preview")]
-        public string Preview { get; set; } = string.Empty;
+        public string? Preview { get; set; }
 
         [JsonPropertyName("uploaderId")]
         public int UploaderId { get; set; }
